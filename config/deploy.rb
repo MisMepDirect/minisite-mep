@@ -1,6 +1,3 @@
-# config valid only for current version of Capistrano
-lock '3.5.0'
-
 set :application, 'minisite_mep'
 set :repo_url, 'git@github.com:MisMepDirect/minisite-mep.git'
 

@@ -1,0 +1,56 @@
+# Logfile created on 2016-08-10 11:37:20 +0000 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-10 11:37:20 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [30aacd60] Running /usr/bin/env mkdir -p /home/deployer/tmp as deployer@85.31.218.130
+  INFO [30aacd60] Finished in 54.430 seconds with exit status 0 (successful).
+  INFO Uploading /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh 100.0%
+  INFO [206b9815] Running /usr/bin/env chmod 700 /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh as deployer@85.31.218.130
+  INFO [206b9815] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [8bd7ec18] Running /usr/bin/env git ls-remote --heads git@github.com:MisMepDirect/minisite-mep.git as deployer@85.31.218.130
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-10 11:40:01 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6e7ecd6e] Running /usr/bin/env mkdir -p /home/deployer/tmp as deployer@85.31.218.130
+  INFO [6e7ecd6e] Finished in 4.290 seconds with exit status 0 (successful).
+  INFO Uploading /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh 100.0%
+  INFO [72599297] Running /usr/bin/env chmod 700 /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh as deployer@85.31.218.130
+  INFO [72599297] Finished in 0.163 seconds with exit status 0 (successful).
+  INFO [531b388a] Running /usr/bin/env git ls-remote --heads git@github.com:MisMepDirect/minisite-mep.git as deployer@85.31.218.130
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-10 11:42:15 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [afdfe245] Running /usr/bin/env mkdir -p /home/deployer/tmp as deployer@85.31.218.130
+  INFO [afdfe245] Finished in 8.729 seconds with exit status 0 (successful).
+  INFO Uploading /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh 100.0%
+  INFO [226230ff] Running /usr/bin/env chmod 700 /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh as deployer@85.31.218.130
+  INFO [226230ff] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [f074b14b] Running /usr/bin/env git ls-remote --heads git@github.com:MisMepDirect/minisite-mep.git as deployer@85.31.218.130
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-08-10 12:11:10 +0000 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a8e696ee] Running /usr/bin/env mkdir -p /home/deployer/tmp as deployer@85.31.218.130
+  INFO [a8e696ee] Finished in 2.574 seconds with exit status 0 (successful).
+  INFO Uploading /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh 100.0%
+  INFO [9e730b4d] Running /usr/bin/env chmod 700 /home/deployer/tmp/git-ssh-minisite_mep-staging-vagrant.sh as deployer@85.31.218.130
+  INFO [9e730b4d] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [e487dfc5] Running /usr/bin/env git ls-remote --heads git@github.com:MisMepDirect/minisite-mep.git as deployer@85.31.218.130
+  INFO [e487dfc5] Finished in 1.612 seconds with exit status 0 (successful).
+  INFO [4316238b] Running /usr/bin/env mkdir -p /var/www/minisite-mep/shared /var/www/minisite-mep/releases as deployer@85.31.218.130
+  INFO [4316238b] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [3661f7d5] Running /usr/bin/env git clone --mirror git@github.com:MisMepDirect/minisite-mep.git /var/www/minisite-mep/repo as deployer@85.31.218.130
+  INFO [3661f7d5] Finished in 1.894 seconds with exit status 0 (successful).
+  INFO [16e39f9f] Running /usr/bin/env git remote update --prune as deployer@85.31.218.130
+  INFO [16e39f9f] Finished in 1.676 seconds with exit status 0 (successful).
+  INFO [99d52774] Running /usr/bin/env mkdir -p /var/www/minisite-mep/releases/20160810121119 as deployer@85.31.218.130
+  INFO [99d52774] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [b7ba81bd] Running /usr/bin/env git archive develop | tar -x -f - -C /var/www/minisite-mep/releases/20160810121119 as deployer@85.31.218.130
+  INFO [b7ba81bd] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [4acda042] Running /usr/bin/env echo "e6cb12974a142209030cdcba6244910410ec0532" >> REVISION as deployer@85.31.218.130
+  INFO [4acda042] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [2719443a] Running /usr/bin/env ln -s /var/www/minisite-mep/releases/20160810121119 /var/www/minisite-mep/releases/current as deployer@85.31.218.130
+  INFO [2719443a] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [61c74eb1] Running /usr/bin/env mv /var/www/minisite-mep/releases/current /var/www/minisite-mep as deployer@85.31.218.130
+  INFO [61c74eb1] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [cc20bd12] Running /usr/bin/env echo "Branch develop (at e6cb12974a142209030cdcba6244910410ec0532) deployed as release 20160810121119 by vagrant" >> /var/www/minisite-mep/revisions.log as deployer@85.31.218.130
+  INFO [cc20bd12] Finished in 0.105 seconds with exit status 0 (successful).
